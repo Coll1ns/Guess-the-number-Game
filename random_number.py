@@ -28,12 +28,12 @@ def computer_guess(x):
 	guess = 0
 	lives = 6
 	
-	while feedback != "c" and lives >= 0:
+	while feedback != "c" and lives > 0:
 		lives -= 1
 		guess = random.randint(low, hi)
 		feedback = input(f"Is {guess} to High (H), to Low (L) or Correct (C)?").lower()
 
-		if lives < 0: 
+		if lives == 0: 
 			 print("Computer has no lives left. User wins! Congrats!")
 		elif feedback == "h":
 			hi = guess - 1
