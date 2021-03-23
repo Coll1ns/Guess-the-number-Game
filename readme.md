@@ -1,0 +1,1 @@
+# This is a game that allows used to eather gues a number that PC has stored. Or select a number and computer will try to guess it.
